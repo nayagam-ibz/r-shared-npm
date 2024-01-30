@@ -1,16 +1,27 @@
-import React from 'react';
-import styles from './styles/Button.scss';
+import React from "react";
+import { useForm } from "react-hook-form";
 import Button from 'react-bootstrap/Button';
 
 const ExampleComponent = ({ text }) => {
-  return (
-    <div>
-      <Button className={`${styles['my-button']} ${styles['disabled']}`}>
-        <div className="testing">This is a child divdddddddddddddd</div>
-      </Button>
-      <Button variant="primary">Primary</Button>
+  const { register, handleSubmit } = useForm();
+  const handleRegistration = (data) => console.log(data);
 
-    </div>
+  return (
+    <form onSubmit={handleSubmit(handleRegistration)}>
+      <div>
+        <label>Name</label>
+        <input name="name" {...register('name')} />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" {...register('email')} />
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" {...register('password')} />
+      </div>
+      <Button>Submit</Button>
+    </form>
   );
 };
 
