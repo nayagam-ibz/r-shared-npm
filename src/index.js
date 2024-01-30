@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles/Button.scss';
 import Button from 'react-bootstrap/Button';
 
-export const ExampleComponent = ({ text }) => {
+const ExampleComponent = ({ text }) => {
   return (
     <div>
       <Button className={`${styles['my-button']} ${styles['disabled']}`}>
@@ -13,3 +13,5 @@ export const ExampleComponent = ({ text }) => {
     </div>
   );
 };
+
+export default ExampleComponent;
