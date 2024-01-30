@@ -1,0 +1,28 @@
+// styles/Button.scss
+
+.my-button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  // Child class
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    // Styles for the child div
+    .testing {
+      // Add styles for the child div here
+      color: #333;
+      font-size: 300px;
+
+    }
+  }
+}
