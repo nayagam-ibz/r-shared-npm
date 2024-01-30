@@ -53,6 +53,11 @@ function BulkImport({
             className='text-center mb-0 d-flex align-items-center cursor-pointer'
             htmlFor='inputGroupFile'
           >
+            <img
+              src={require(`../src/images/import.png`)}
+              alt='import'
+              width='16'
+            />
             <p className='mb-0 px-2 add_text'>Import</p>
           </label>
         </div>
