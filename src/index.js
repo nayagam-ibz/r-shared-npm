@@ -9,7 +9,7 @@ const ExampleComponent = ({ text }) => {
   return (
     <form onSubmit={handleSubmit(handleRegistration)}>
       <div>
-        <label>Name</label>
+        <label>First Name</label>
         <input name="name" {...register('name')} />
       </div>
       <div>
