@@ -1,6 +1,5 @@
 import React from 'react'
 import { read, utils, writeFile } from 'xlsx'
-import IMAGES from '../images'
 
 function BulkImport({ 
   handleBulkImport,
@@ -54,7 +53,6 @@ function BulkImport({
             className='text-center mb-0 d-flex align-items-center cursor-pointer'
             htmlFor='inputGroupFile'
           >
-            <img src={IMAGES.Import} alt='import' width='16' />
             <p className='mb-0 px-2 add_text'>Import</p>
           </label>
         </div>

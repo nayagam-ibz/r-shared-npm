@@ -12,6 +12,10 @@ import {
 } from '../components';
 
 const TableData = ({ data, view_Data }) => {
+  const storedValue = localStorage.getItem('myKey');
+
+  console.log(storedValue)
+
   const [sortBy, setSortBy] = useState(null);
   const [sortOrder, setSortOrder] = useState('asc');
 
