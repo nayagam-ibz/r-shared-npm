@@ -12,7 +12,7 @@ import {
 } from '../components';
 
 const TableData = ({ data, view_Data }) => {
-  const storedValue = localStorage.getItem('myKey');
+  const storedValue = localStorage.getItem('app_Key');
 
   console.log(storedValue)
 
